@@ -1,0 +1,6 @@
+{
+  "lookupPaths": [
+    "components/**/*.js",
+    "components"
+  ]
+}

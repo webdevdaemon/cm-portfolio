@@ -1,0 +1,21 @@
+{
+  "name": "pro-portfolio",
+  "version": "1.0.0",
+  "description": "Charles Morgan's Web Develop Portfolio/Resume",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "generate": "rc-autocomplete"
+  },
+  "keywords": [],
+  "author": "Charles E. Morgan",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^4.2.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "react-autocomplete-cli": "0.0.3"
+  }
+}
