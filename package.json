@@ -11,9 +11,11 @@
   "author": "Charles E. Morgan",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.17.1",
     "eslint-plugin-env": "0.0.3",
     "next": "^4.2.3",
     "react": "^16.2.0",
+    "react-axios": "^2.0.0",
     "react-dom": "^16.2.0"
   },
   "devDependencies": {
