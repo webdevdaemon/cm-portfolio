@@ -1,15 +1,13 @@
-import React from 'react'
-
 import PropTypes from 'prop-types'
 
-const CodePen = ({listID, slug, defaultTabs, customTitle, height, user}) => (
-  <div class="Codepen">
+const CodePen = ({slug, defaultTabs, customTitle}) => (
+  <div>
     <p
-      data-height={height}
+      data-height="660"
       data-theme-id="dark"
       data-slug-hash={slug}
       data-default-tab={defaultTabs}
-      data-user={user}
+      data-user="webdevdaemon"
       data-embed-version="2"
       data-pen-title={customTitle}
       class="codepen"
@@ -29,15 +27,9 @@ const CodePen = ({listID, slug, defaultTabs, customTitle, height, user}) => (
 )
 
 CodePen.propTypes = {
-  slug: PropTypes.string,
-  defaultTabs: PropTypes.string,
-  customtitle: PropTypes.string,
-}
-CodePen.defaultProps = {
-  defaultTabs: 'result',
-  customtitle: 'codepen.com',
-  height: '30vmin',
-  user: 'webdevdaemon',
+    slug: PropTypes.string,
+    defaultTabs: PropTypes.string,
+    customtitle: PropTypes.string,
 }
 
 export default CodePen

@@ -5,7 +5,9 @@
   ],
   "loadEagerly": [],
   "dontLoad": [
-    "node_modules/**"
+    "node_modules/**",
+    ".next/**",
+    ".git/"
   ],
   "plugins": {
     "doc_comment": true,
@@ -19,6 +21,7 @@
       "dontLoad": "",
       "load": "",
       "modules": ""
-    }
+    },
+    "node_resolve": {}
   }
 }
