@@ -18,13 +18,14 @@ class ListCodepens extends Component {
     customtitle: PropTypes.string,
   }
 
-  getAccountByUsername = username => axios(`${BASE_URL}/profile/${username}`)
+  getAccountByUsername = username =>
+    axios(`${BASE_URL}/profile/${USER_NAME}`)
 
   getUserPensByTagName = (username, tagname) =>
-    axios(`${BASE_URL}/pens/public/${username}?tag=${tagname}`)
+    axios(`${BASE_URL}/pens/public/${USER_NAME}?tag=${TAG_NAME}`)
 
   getCollectionsByUsername = username =>
-    axios(`${BASE_URL}/collections/public/${username}`)
+    axios(`${BASE_URL}/collections/public/${USER_NAME}`)
 
   render() {
     return (
@@ -34,8 +35,6 @@ class ListCodepens extends Component {
     )
   }
 }
-
-// Get chriscoyier's ${'public'} collections
 
 axios
   .all([

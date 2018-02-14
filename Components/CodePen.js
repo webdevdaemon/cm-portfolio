@@ -2,42 +2,50 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
-const CodePen = ({listID, slug, defaultTabs, customTitle, height, user}) => (
-  <div class="Codepen">
+const CodePen = props => (
+  <li class='Codepen' penID={props.penID}>
     <p
-      data-height={height}
-      data-theme-id="dark"
-      data-slug-hash={slug}
-      data-default-tab={defaultTabs}
-      data-user={user}
+      data-height={props.height}
+      data-theme-id={props.themeID}
+      data-slug-hash={props.slug}
+      data-default-tab={props.defaultTabs}
+      data-user={props.user}
       data-embed-version="2"
-      data-pen-title={customTitle}
-      class="codepen"
+      data-pen-title={props.customTitle}
+      className="codepen embed"
     >
       See the Pen
-      <a href={`https://codepen.io/webdevdaemon/pen/${slug}/`}>{customTitle}</a>
-      by Charles Morgan (<a href="https://codepen.io/webdevdaemon">
+      <a href={
+        `https://codepen.io/${props.user}/pen/${props.slug}/`
+        }>
+        {props.customTitle}
+      </a>
+      by Charles Morgan
+      (<a href={`https://codepen.io/${props.user}`}>
         @webdevdaemon
-      </a>) on
+      </a>)
+      on
       <a href="https://codepen.io">CodePen</a>.
     </p>
-    <script
-      async
+    <script async
       src="https://production-assets.codepen.io/assets/embed/ei.js"
     />
-  </div>
+  </li>
 )
 
 CodePen.propTypes = {
+  penID: PropTypes.number,
   slug: PropTypes.string,
   defaultTabs: PropTypes.string,
   customtitle: PropTypes.string,
+  themeID: PropTypes.string,
 }
 CodePen.defaultProps = {
   defaultTabs: 'result',
-  customtitle: 'codepen.com',
-  height: '30vmin',
+  customtitle: 'codepen.io',
+  height: '650',
   user: 'webdevdaemon',
+  themeID: 'dark'
 }
 
 export default CodePen
