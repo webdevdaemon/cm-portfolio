@@ -1,51 +1,18 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import axios from 'axios'
+import getPens from '../helpers/getPens'
 
-const BASE_URL = 'http://cpv2api.com',
-  USER_NAME = 'webdevdaemon',
-  TAG_NAME = 'portfolio'
+console.log(getPens('http://cpv2api.com/collections/finished/webdevdaemon'))
 
-class ListCodepens extends Component {
-  state = {
-    pens: [],
-    isLoading: false,
-  }
-
-  static propTypes = {
-    slug: PropTypes.string,
-    defaultTabs: PropTypes.string,
-    customtitle: PropTypes.string,
-  }
-
-  getAccountByUsername = username =>
-    axios(`${BASE_URL}/profile/${USER_NAME}`)
-
-  getUserPensByTagName = (username, tagname) =>
-    axios(`${BASE_URL}/pens/public/${USER_NAME}?tag=${TAG_NAME}`)
-
-  getCollectionsByUsername = username =>
-    axios(`${BASE_URL}/collections/public/${USER_NAME}`)
-
-  render() {
-    return (
-      <div className="list-codepens-wrap">
-        <ol className="ListCodepens">{}</ol>
-      </div>
-    )
-  }
-}
-
-axios
-  .all([
-    getAccountByUsername(),
-    getUserPensByTagName(),
-    getCollectionsByUsername(),
-  ])
-  .then(
-    axios.spread(function(acct, perms) {
-      console.log('Both requests are now complete')
-    }),
-  )
+const ListCodepens = props => (
+  <div className="list-codepens-wrap">
+    <ol className="list codepens">
+      {
+        props.pens.map((item, index) => <li id={index}>{item.data}</li>)
+      }
+    </ol>
+  </div>
+)
 
 export default ListCodepens

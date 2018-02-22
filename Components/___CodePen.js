@@ -1,7 +1,9 @@
+import React from 'react'
 import PropTypes from 'prop-types'
 
 const CodePen = props => (
   <li className="Codepen codepen-embed" penID={props.penID}>
+
     <p data-height={props.height}
       data-theme-id={props.themeID}
       data-slug-hash={props.slug}
@@ -11,13 +13,16 @@ const CodePen = props => (
       data-pen-title={props.customTitle} >
 
       See the Pen
+
       <a href={`https://codepen.io/${props.user}/pen/${props.slug}`}>
         {props.customTitle}
       </a>
+
       by Charles Morgan
       (<a href={`https://codepen.io/${props.user}`}> @webdevdaemon </a>)
       on
       <a href="https://codepen.io">CodePen</a>
+
     </p>
 
     <script
@@ -35,7 +40,6 @@ CodePen.propTypes = {
   customtitle: PropTypes.string,
   themeID: PropTypes.string,
 }
-
 CodePen.defaultProps = {
   defaultTabs: 'result',
   customtitle: 'codepen.io',

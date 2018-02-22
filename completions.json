@@ -74,7 +74,80 @@
     },
     "Header": {},
     "Layout": {},
-    "ListCodepens": {
+    "ListCodepens": {},
+    "___CodePen": {
+      "attributes": [
+        "penID",
+        "slug",
+        "defaultTabs",
+        "customtitle",
+        "themeID",
+        "height",
+        "user"
+      ],
+      "props": {
+        "penID": {
+          "type": {
+            "name": "number"
+          },
+          "required": false,
+          "description": ""
+        },
+        "slug": {
+          "type": {
+            "name": "string"
+          },
+          "required": false,
+          "description": ""
+        },
+        "defaultTabs": {
+          "type": {
+            "name": "string"
+          },
+          "required": false,
+          "description": "",
+          "defaultValue": {
+            "value": "'result'",
+            "computed": false
+          }
+        },
+        "customtitle": {
+          "type": {
+            "name": "string"
+          },
+          "required": false,
+          "description": "",
+          "defaultValue": {
+            "value": "'codepen.io'",
+            "computed": false
+          }
+        },
+        "themeID": {
+          "type": {
+            "name": "string"
+          },
+          "required": false,
+          "description": "",
+          "defaultValue": {
+            "value": "'dark'",
+            "computed": false
+          }
+        },
+        "height": {
+          "defaultValue": {
+            "value": "'650'",
+            "computed": false
+          }
+        },
+        "user": {
+          "defaultValue": {
+            "value": "'webdevdaemon'",
+            "computed": false
+          }
+        }
+      }
+    },
+    "ListCodePensContainer": {
       "attributes": [
         "slug",
         "defaultTabs",
@@ -104,35 +177,10 @@
         }
       }
     },
-    "_CodePen": {
-      "attributes": [
-        "slug",
-        "defaultTabs",
-        "customtitle"
-      ],
-      "props": {
-        "slug": {
-          "type": {
-            "name": "string"
-          },
-          "required": false,
-          "description": ""
-        },
-        "defaultTabs": {
-          "type": {
-            "name": "string"
-          },
-          "required": false,
-          "description": ""
-        },
-        "customtitle": {
-          "type": {
-            "name": "string"
-          },
-          "required": false,
-          "description": ""
-        }
-      }
-    }
+    "about": {},
+    "contact": {},
+    "hiring-info": {},
+    "Pages": {},
+    "projects": {}
   }
 }

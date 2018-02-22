@@ -1,13 +1,15 @@
-{
+// This is an example fragment.
+// Save a new fragment with the "Save selection as Code Fragment" command.
+function foo() {
+  alert('Thank you for using the Code Fragments extension!');
+}{
   "ecmaVersion": "7",
   "libs": [
     "browser"
   ],
   "loadEagerly": [],
   "dontLoad": [
-    "node_modules/**",
-    ".next/**",
-    ".git/"
+    "node_modules/"
   ],
   "plugins": {
     "doc_comment": true,
