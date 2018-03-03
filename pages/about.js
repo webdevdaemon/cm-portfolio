@@ -1,9 +1,9 @@
 import React from 'react'
 
-import Layout from '../Components/Layout'
+import Page from '../Layouts/Page'
 
 export default () => (
-  <Layout>
+  <Page pageClassName='aboutMe' >
     <p>This is the about page</p>
-  </Layout>
+  </Page>
 )

@@ -1,5 +1,6 @@
 {
   "components": {
+    "BuiltBy": {},
     "CodePen": {
       "attributes": [
         "penID",
@@ -72,9 +73,62 @@
         }
       }
     },
+    "Content": {
+      "attributes": [
+        "addStyles",
+        "headerProps",
+        "footerProps"
+      ],
+      "props": {
+        "addStyles": {
+          "type": {
+            "name": "object"
+          },
+          "required": false,
+          "description": ""
+        },
+        "headerProps": {
+          "type": {
+            "name": "shape",
+            "value": {
+              "title": {
+                "name": "string",
+                "required": false
+              },
+              "subTitle": {
+                "name": "string",
+                "required": false
+              },
+              "addStyles": {
+                "name": "object",
+                "required": false
+              }
+            }
+          },
+          "required": false,
+          "description": ""
+        },
+        "footerProps": {
+          "type": {
+            "name": "shape",
+            "value": {
+              "addStyles": {
+                "name": "object",
+                "required": false
+              }
+            }
+          },
+          "required": false,
+          "description": ""
+        }
+      }
+    },
+    "Footer": {},
+    "Head": {},
     "Header": {},
-    "Layout": {},
     "ListCodepens": {},
+    "Nav": {},
+    "PageTitle": {},
     "___CodePen": {
       "attributes": [
         "penID",
@@ -147,40 +201,12 @@
         }
       }
     },
-    "ListCodePensContainer": {
-      "attributes": [
-        "slug",
-        "defaultTabs",
-        "customtitle"
-      ],
-      "props": {
-        "slug": {
-          "type": {
-            "name": "string"
-          },
-          "required": false,
-          "description": ""
-        },
-        "defaultTabs": {
-          "type": {
-            "name": "string"
-          },
-          "required": false,
-          "description": ""
-        },
-        "customtitle": {
-          "type": {
-            "name": "string"
-          },
-          "required": false,
-          "description": ""
-        }
-      }
-    },
+    "ListCodePensWrapper": {},
     "about": {},
     "contact": {},
-    "hiring-info": {},
+    "hire": {},
     "Pages": {},
-    "projects": {}
+    "projects": {},
+    "Page": {}
   }
 }

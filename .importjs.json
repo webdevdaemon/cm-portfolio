@@ -1,8 +1,9 @@
 {
-    "lookupPaths": [
-        "Components/*.js",
-        "Containers/*.js",
-        "helpers/*.js",
-        "pages/*.js"
-    ]
+  "lookupPaths": [
+    "Components/*.js",
+    "Containers/*.js",
+    "helpers/*.js",
+    "pages/*.js",
+    "Layouts/*.js"
+  ]
 }

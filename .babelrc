@@ -1,4 +1,11 @@
 {
-    "presets": ["react", "env"],
-    "plugins": ["transform-class-properties"]
+  "presets": [
+    "react",
+    "env",
+    "next/babel",
+    "flow"
+  ],
+  "plugins": [
+    "transform-class-properties"
+  ]
 }

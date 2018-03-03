@@ -34,12 +34,17 @@ CodePen.propTypes = {
   defaultTabs: PropTypes.string,
   customtitle: PropTypes.string,
   themeID: PropTypes.string,
+  height: PropTypes.oneOf([
+    PropTypes.string,
+    PropTypes.number,
+  ]).isRequired,
+  user: PropTypes.string,
 }
 
 CodePen.defaultProps = {
   defaultTabs: 'result',
   customtitle: 'codepen.io',
-  height: '650',
+  height: '650px',
   user: 'webdevdaemon',
   themeID: 'dark',
 }

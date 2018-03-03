@@ -1,11 +1,10 @@
 import React from 'react'
-import Header from '../Components/Header'
-import Layout from '../Components/Layout'
+import Page from '../Layouts/Page'
 
-const Index = () => (
-  <Layout>
+import './index.min.css'
+
+export default () => (
+  <Page pageClassName='helloWorld'>
     <p>Hello Next.js</p>
-  </Layout>
+  </Page>
 )
-
-export default Index

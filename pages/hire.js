@@ -1,11 +1,11 @@
 import React from 'react'
 
-import Layout from '../Components/Layout'
+import Page from '../Layouts/Page'
 
 const Hiring = () => (
-  <Layout>
+  <Page pageClassName='hireMe'>
     <h1>Hiring Info:</h1>
-  </Layout>
+  </Page>
 )
 
 export default Hiring

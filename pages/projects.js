@@ -1,12 +1,15 @@
 import React from 'react'
+import Page from '../Layouts/Page'
 
-import Header from '../Components/Header'
-import Layout from '../Components/Layout'
+import ListCodePensWrapper from '../Containers/ListCodePensWrapper'
+// import ListCodepens from '../Components/ListCodepens'
 
-const Projects = () => (
-  <Layout>
-    <h1>Portfolio Projects:</h1>
-  </Layout>
+// import fetchPens from '../helpers/fetchPens'
+
+const styles = {}
+
+export default () => (
+  <Page rootStyles={styles} pageClassName='projectGallery'>
+    <ListCodePensWrapper />
+  </Page>
 )
-
-export default Projects

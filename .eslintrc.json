@@ -1,52 +1,52 @@
 {
-    "parser": "babel-eslint",
-    "parserOptions": {
-        "ecmaVersion": 8,
-        "ecmaFeatures": {
-            "experimentalObjectRestSpread": true,
-            "restParams": true,
-            "spread": true,
-            "jsx": true
-        },
-        "sourceType": "module"
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "restParams": true,
+      "spread": true,
+      "jsx": true
     },
-    "plugins": [
-        "react",
-        "env"
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "env"
+  ],
+  "rules": {
+    "no-unused-vars": 0,
+    "no-console": 0,
+    "linebreak-style": [
+      "error",
+      "unix"
     ],
-    "rules": {
-        "no-unused-vars": 0,
-        "no-console": 0,
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
-        "quotes": [
-            "error",
-            "single"
-        ],
-        "semi": [
-            "error",
-            "never"
-        ],
-        "indent": [
-            0,
-            2,
-            {
-                "ImportDeclaration": 4,
-                "flatTernaryExpressions": false,
-                "ObjectExpression": 2,
-                "ArrayExpression": 2,
-                "SwitchCase": 1,
-                "CallExpression": {
-                    "arguments": "first"
-                },
-                "VariableDeclarator": {
-                    "var": 2,
-                    "let": 2,
-                    "const": 3
-                }
-            }
-        ]
-    }
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "never"
+    ],
+    "indent": [
+      0,
+      2,
+      {
+        "ImportDeclaration": 4,
+        "flatTernaryExpressions": false,
+        "ObjectExpression": 2,
+        "ArrayExpression": 2,
+        "SwitchCase": 1,
+        "CallExpression": {
+          "arguments": "first"
+        },
+        "VariableDeclarator": {
+          "var": 2,
+          "let": 2,
+          "const": 3
+        }
+      }
+    ]
+  }
 }

@@ -1,11 +1,12 @@
 import React from 'react'
+import Page from '../Layouts/Page'
 
-import Layout from '../Components/Layout'
-
-const ContactInfo = () => (
-  <Layout>
-    <p>CONTACT ME</p>
-  </Layout>
+export default Contact = props => (
+  <Page pageClassName='contactMe' pageStyles={defStyles}>
+    <p>
+      CONTACT ME
+    </p>
+  </Page>
 )
 
-export default ContactInfo
+// export default ContactInfo
