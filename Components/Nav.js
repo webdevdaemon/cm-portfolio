@@ -10,9 +10,8 @@ const defStyles = {
     alignItems: 'center',
   },
   link: {
-    fontSize: '3vmin',
+    fontSize: '2rem',
     marginRight: 15,
-    // fontFamily: 'Federo, avenir, system font',
     fontFamily: 'hasklig, monaco, inconsolata, monospace',
     letterSpacing: '-2px',
     wordWrap: 'nowrap',
@@ -20,20 +19,20 @@ const defStyles = {
 }
 
 const routeList = [
-  {path: '/', title: 'homePage'},
-  {path: '/hire', title: 'hireMe'},
-  {path: '/projects', title: 'viewProjects'},
-  {path: '/about', title: 'aboutMe'},
-  {path: '/contact', title: 'contactMe'},
+  { path: '/', title: 'homePage' },
+  { path: '/hire', title: 'hireMe' },
+  { path: '/projects', title: 'viewProjects' },
+  { path: '/about', title: 'aboutMe' },
+  { path: '/contact', title: 'contactMe' },
 ]
 
 const Nav = props => (
   <div className="nav" style={defStyles.nav}>
-    { routeList.map((obj, dex) => (
-      <Link href={obj.path} id={`embed-${dex}`} className='nav-link'>
+    {routeList.map((obj, dex) => (
+      <Link href={obj.path} key={`${dex}`}>
         <a style={defStyles.link}>{obj.title}</a>
       </Link>
-    ) ) }
+    ))}
   </div>
 )
 

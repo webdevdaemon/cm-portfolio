@@ -7,7 +7,11 @@ import Nav from './Nav'
 
 
 const defStyles = {
-  backgroundImage: 'linear-gradient(to top, #accbee 0%, #e7f0fd 100%)',
+  backgroundImage: `linear-gradient(
+    to top,
+    #accbee 0%,
+    #e7f0fd 100%
+  )`,
   height: '100%',
   width: '95vw',
   minHeight: '95vh',
@@ -25,9 +29,7 @@ const Content = props => (
     <Header {...props.headerProps}>
       <Nav />
     </Header>
-    <div>
-      {props.children}
-    </div>
+    <div>{props.children}</div>
     <Footer {...props.footerProps}>
       <Nav />
     </Footer>

@@ -18,9 +18,9 @@ const defStyles = {
 }
 
 const Footer = props => (
-  <div className='footer'>
+  <div className="footer">
     <Nav />
-    <BuiltBy/>
+    <BuiltBy />
   </div>
 )
 

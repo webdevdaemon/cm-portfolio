@@ -1,12 +1,16 @@
-import axios from 'axios'
-import asyncErr from './asyncErr'
-
-const fetchPens = async function(qString, pgNumber) {
-  const url = `${dataUrl}${arguments[1] ? '?page=' + pgNumber : ''}`
-  const response = await asyncErr(axios(url))
-  return response.ok ? response.data : response.error
-}
-
-const a = fetchPens('http://cpv2api.com/collection/XvKdxQ')
-console.log('fetchPens.js:11 ::',{a})
-export default fetchPens
+// import axios from 'axios'
+// import checkAsync from './checkAsync'
+//
+// const checkAsync = prom =>
+//   prom
+//     .then(response => ({ ok: true, data: response.data }))
+//     .catch(err => ({ ok: false, err }))
+//
+// const fetchPens = function(queryStr, pgNum = null) {
+//   let urlStr = `${ queryStr }${ pgNum !== null ? '?page=' + pgNum : '' }`
+//
+//   return checkAsync(axios(urlStr))
+//   .then(data => [...data.data.data])
+// }
+//
+// export default fetchPens

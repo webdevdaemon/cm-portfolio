@@ -60,12 +60,32 @@
           }
         },
         "height": {
+          "type": {
+            "name": "enum",
+            "value": [
+              {
+                "value": "PropTypes.string",
+                "computed": true
+              },
+              {
+                "value": "PropTypes.number",
+                "computed": true
+              }
+            ]
+          },
+          "required": true,
+          "description": "",
           "defaultValue": {
-            "value": "'650'",
+            "value": "'650px'",
             "computed": false
           }
         },
         "user": {
+          "type": {
+            "name": "string"
+          },
+          "required": false,
+          "description": "",
           "defaultValue": {
             "value": "'webdevdaemon'",
             "computed": false

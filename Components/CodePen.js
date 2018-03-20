@@ -1,43 +1,45 @@
 import PropTypes from 'prop-types'
 
-const CodePen = props => (
-  <li className="Codepen codepen-embed" penID={props.penID}>
-    <p data-height={props.height}
-      data-theme-id={props.themeID}
-      data-slug-hash={props.slug}
-      data-default-tab={props.defaultTabs}
-      data-user={props.user}
-      data-embed-version="2"
-      data-pen-title={props.customTitle} >
+class CodePen extends React.PureComponent {
+  constructor(props) {
+    super(props)
+  }
 
-      See the Pen
-      <a href={`https://codepen.io/${props.user}/pen/${props.slug}`}>
-        {props.customTitle}
-      </a>
-      by Charles Morgan
-      (<a href={`https://codepen.io/${props.user}`}> @webdevdaemon </a>)
-      on
-      <a href="https://codepen.io">CodePen</a>
-    </p>
-
-    <script
-      async
-      src="https://production-assets.codepen.io/assets/embed/ei.js"
-    />
-
-  </li>
-)
+  render() {
+    const props = this.props
+    return (
+      <li className="Codepen codepen-embed" key={props.id} slug={props.link}>
+        <p
+          data-height={props.height}
+          data-theme-id={props.themeID}
+          data-slug-hash={props.slug}
+          data-default-tab={props.defaultTabs}
+          data-user={props.user}
+          data-embed-version="2"
+          data-pen-title={props.customTitle}
+          preview={props.preview}>
+          <span>{'See the Pen '}</span>
+          <a href={props.link}>{props.customTitle}</a>
+          <span>{'by '}</span>
+          <a href={`https://codepen.io/${props.user}`}>{'webDevDaemon '}</a>
+          <span>
+            <i>{'(Charles M.) '}</i>
+          </span>
+          <span>{'on '}</span>
+          <a href="https://codepen.io">{'CodePen'}</a>
+        </p>
+      </li>
+    )
+  }
+}
 
 CodePen.propTypes = {
-  penID: PropTypes.number,
+  id: PropTypes.number,
   slug: PropTypes.string,
   defaultTabs: PropTypes.string,
   customtitle: PropTypes.string,
   themeID: PropTypes.string,
-  height: PropTypes.oneOf([
-    PropTypes.string,
-    PropTypes.number,
-  ]).isRequired,
+  height: PropTypes.string,
   user: PropTypes.string,
 }
 

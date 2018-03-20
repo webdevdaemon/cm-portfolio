@@ -4,7 +4,7 @@ const BuiltBy = props => (
   <div className='built-by'>
     <span>
       Built with
-      <em> React.js</em>
+      <b><em>React.js</em></b>
     </span>
     <br />
     <span>

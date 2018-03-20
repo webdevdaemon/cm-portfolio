@@ -1,11 +1,22 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
+import Codepen from 'react-codepen-embed'
 
-import fetchPens from '../helpers/fetchPens'
-import Codepen from './CodePen'
-
-export default ({children}) => (
+const ListCodepens = ({pens}) => (
   <ol className="list-codepens">
-    {children}
+    { 
+      pens.map((pen, index) => (
+        <Codepen 
+          user={pen.user.username}
+          hash={pen.id}
+          height={500}
+          defaultTab='result' 
+          key={index}
+          className='codepen'
+        />)
+      )
+    }
   </ol>
 )
+
+export default ListCodepens

@@ -1,52 +1,56 @@
-//@flow
+import axios from 'axios'
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+// import getPenList from '../helpers/getPenList'
 
 import ListCodepens from '../Components/ListCodepens'
-import Codepen from '../Components/CodePen'
+import { isArray } from 'util';
 
-import fetchPens from '../helpers/fetchPens'
+
+const SCRIPT_SRC = 'https://production-assets.codepen.io/assets/embed/ei.js'
+const URL = 'http://cpv2api.com/collection/XvKdxQ'
 
 const defStyles = {}
 
 class ListCodepensWrapper extends Component {
-  constructor(props) {
-    super(props)
+
+  constructor() {
+    super()
     this.state = {
-      url: 'http://cpv2api.com/collection/XvKdxQ',
-      pens: [],
-      isLoading: true,
-      page: null,
+      pens: []
     }
   }
 
-  _populateList = array => array.map((obj, dex) => <div key={dex}>{obj}</div>)
-
   componentDidMount() {
-    let list = this.setState(
-      (prev, props) => ({
-        isLoading: prev.pens.length ? false : true,
-      }),
-      () => {
-        this.state.pens.length &&
-          this.setState({
-            isLoading: false,
-          })
-      },
-    )
+    this._mounted = true
+    console.log(this._mounted)
+
+    axios.get(URL)
+    .then(res => {
+      console.log(res.data.data)
+      return res.data.data
+    })
+    .then(pens => this.setState({pens}))
+    .catch(e => new Error(e))
+    
+    console.log({ pens: this.state.pens })
+    const script = document.createElement('script')
+    script.src = SCRIPT_SRC
+    script.async = 1
+    document.body.appendChild(script)
+  }
+
+  componentWillUnmount() {
+    this._mounted = false
+    console.log(this._mounted)
   }
 
   render() {
-    const { pens, isLoading } = this.state
     return (
       <div className="list-codepens-wrapper">
-        <ListCodepens>
-          {!isLoading ? (
-            this._populateList([...pens])
-          ) : (
-            <p style={defStyles}>{'LOADING PENS...'}</p>
-          )}
-        </ListCodepens>
+        <ListCodepens 
+          pens={this.state.pens}
+        />
       </div>
     )
   }

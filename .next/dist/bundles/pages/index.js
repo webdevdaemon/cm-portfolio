@@ -107,14 +107,23 @@ var BuiltBy = function BuiltBy(props) {
       },
       'Built with',
       _react2.default.createElement(
-        'em',
+        'b',
         {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 7
           }
         },
-        ' React.js'
+        _react2.default.createElement(
+          'em',
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 7
+            }
+          },
+          'React.js'
+        )
       )
     ),
     _react2.default.createElement('br', {
@@ -203,7 +212,7 @@ var _Nav2 = _interopRequireDefault(_Nav);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var defStyles = {
-  backgroundImage: 'linear-gradient(to top, #accbee 0%, #e7f0fd 100%)',
+  backgroundImage: 'linear-gradient(\n    to top,\n    #accbee 0%,\n    #e7f0fd 100%\n  )',
   height: '100%',
   width: '95vw',
   minHeight: '95vh',
@@ -219,7 +228,7 @@ var Content = function Content(props) {
     'div',
     { style: Object.assign({}, defStyles, props.addStyles), __source: {
         fileName: _jsxFileName,
-        lineNumber: 22
+        lineNumber: 26
       }
     },
     _react2.default.createElement(
@@ -227,13 +236,13 @@ var Content = function Content(props) {
       _extends({}, props.headerProps, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25
+          lineNumber: 29
         }
       }),
       _react2.default.createElement(_Nav2.default, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26
+          lineNumber: 30
         }
       })
     ),
@@ -242,7 +251,7 @@ var Content = function Content(props) {
       {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28
+          lineNumber: 32
         }
       },
       props.children
@@ -252,13 +261,13 @@ var Content = function Content(props) {
       _extends({}, props.footerProps, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31
+          lineNumber: 33
         }
       }),
       _react2.default.createElement(_Nav2.default, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 34
         }
       })
     )
@@ -381,7 +390,7 @@ exports.default = function (_ref) {
   return _react2.default.createElement(
     'div',
     {
-      className: _style2.default.dynamic([['421078542', [styleTag]]]),
+      className: _style2.default.dynamic([['732877513', [styleTag]]]),
       __source: {
         fileName: _jsxFileName,
         lineNumber: 5
@@ -395,22 +404,27 @@ exports.default = function (_ref) {
           lineNumber: 6
         }
       },
-      _react2.default.createElement('meta', { name: 'viewport', content: 'width=device-width, initial-scale=1', className: _style2.default.dynamic([['421078542', [styleTag]]]),
+      _react2.default.createElement('meta', {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1',
+        className: _style2.default.dynamic([['732877513', [styleTag]]]),
         __source: {
           fileName: _jsxFileName,
           lineNumber: 7
         }
       }),
-      _react2.default.createElement('meta', { charSet: 'utf-8', className: _style2.default.dynamic([['421078542', [styleTag]]]),
+      _react2.default.createElement('meta', {
+        charSet: 'utf-8',
+        className: _style2.default.dynamic([['732877513', [styleTag]]]),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 8
+          lineNumber: 12
         }
       })
     ),
     _react2.default.createElement(_style2.default, {
-      styleId: '421078542',
-      css: '{' + styleTag + ';}html{box-sizing:border-box;background:#000;font:11px menlo;color:#333;margin:0;padding:0;height:100%;min-height:100vh;width:100%;min-width:100vw;}*,*:before,*:after{box-sizing:inherit;}.page{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:stretch;-webkit-justify-content:stretch;-ms-flex-pack:stretch;justify-content:stretch;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:0;padding:0;height:100%;width:100%;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkNvbXBvbmVudHMvSGVhZC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFTdUIsQUFJK0IsQUFhSCxBQUlOLEFBWWxCLG1CQWZHLEdBYmtCLE9BNEJwQixTQTNCb0IsZ0JBQ0wsV0FDRixTQUNDLEFBYVksVUFaVixZQUNLLGlCQUNOLFdBQ0ssZ0JBQ2xCLFlBUzBCLHVHQUNMLDZGQUNWLFNBQ0MsVUFDRSxZQUNELFdBQ2IiLCJmaWxlIjoiQ29tcG9uZW50cy9IZWFkLmpzIiwic291cmNlUm9vdCI6Ii9Vc2Vycy9jaGFybGVzbW9yZ2FuL0RldmVsb3Blci9wcm9qZWN0cy9wcm8tcG9ydGZvbGlvIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0J1xuaW1wb3J0IEhlYWQgZnJvbSAnbmV4dC9oZWFkJ1xuXG5leHBvcnQgZGVmYXVsdCAoe3N0eWxlVGFnfSkgPT4gKFxuICA8ZGl2PlxuICAgIDxIZWFkPlxuICAgICAgPG1ldGEgbmFtZT1cInZpZXdwb3J0XCIgY29udGVudD1cIndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xXCIgLz5cbiAgICAgIDxtZXRhIGNoYXJTZXQ9XCJ1dGYtOFwiIC8+XG4gICAgPC9IZWFkPlxuICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntgXG5cbiAgICAgIGh0bWwge1xuICAgICAgICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICAgICAgICBiYWNrZ3JvdW5kOiAjMDAwO1xuICAgICAgICBmb250OiAxMXB4IG1lbmxvO1xuICAgICAgICBjb2xvcjogIzMzMztcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBoZWlnaHQ6IDEwMCU7XG4gICAgICAgIG1pbi1oZWlnaHQ6IDEwMHZoO1xuICAgICAgICB3aWR0aDogMTAwJTtcbiAgICAgICAgbWluLXdpZHRoOiAxMDB2dztcbiAgICAgIH1cblxuICAgICAgKiwgKjpiZWZvcmUsICo6YWZ0ZXIge1xuICAgICAgICBib3gtc2l6aW5nOiBpbmhlcml0O1xuICAgICAgfVxuXG4gICAgICAucGFnZSB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgICAgIGp1c3RpZnktY29udGVudDogc3RyZXRjaDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBoZWlnaHQ6IDEwMCU7XG4gICAgICAgIHdpZHRoOiAxMDAlO1xuICAgICAgfVxuXG4gICAgICAke3N0eWxlVGFnfVxuXG4gICAgYH08L3N0eWxlPlxuICA8L2Rpdj5cbilcbiJdfQ== */\n/*@ sourceURL=Components/Head.js */',
+      styleId: '732877513',
+      css: '{' + styleTag + ';}html{box-sizing:border-box;background:#000;font:16px Raleway;color:#333;margin:0;padding:0;height:100%;min-height:100vh;width:100%;min-width:100vw;}*,*:before,*:after{box-sizing:inherit;}.page{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:0;padding:0;min-height:100%;width:100%;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkNvbXBvbmVudHMvSGVhZC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFnQnVCLEFBSStCLEFBYUgsQUFJTixBQVlsQixtQkFmRyxHQWJrQixPQTRCcEIsU0EzQnNCLGtCQUNQLFdBQ0YsT0FjYSxFQWJaLFVBQ0UsWUFDSyxpQkFDTixXQUNLLGdCQUNsQixVQVNnQyxtSEFDWCw2RkFDVixTQUNDLFVBQ00sZ0JBQ0wsV0FDYiIsImZpbGUiOiJDb21wb25lbnRzL0hlYWQuanMiLCJzb3VyY2VSb290IjoiL1VzZXJzL2NoYXJsZXNtb3JnYW4vRGV2ZWxvcGVyL3Byb2plY3RzL3Byby1wb3J0Zm9saW8iLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnXG5pbXBvcnQgSGVhZCBmcm9tICduZXh0L2hlYWQnXG5cbmV4cG9ydCBkZWZhdWx0ICh7c3R5bGVUYWd9KSA9PiAoXG4gIDxkaXY+XG4gICAgPEhlYWQ+XG4gICAgICA8bWV0YVxuICAgICAgICBuYW1lPVwidmlld3BvcnRcIlxuICAgICAgICBjb250ZW50PVwid2lkdGg9ZGV2aWNlLXdpZHRoLFxuICAgICAgICBpbml0aWFsLXNjYWxlPTFcIlxuICAgICAgLz5cbiAgICAgIDxtZXRhXG4gICAgICAgIGNoYXJTZXQ9XCJ1dGYtOFwiXG4gICAgICAvPlxuXG4gICAgPC9IZWFkPlxuICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntgXG5cbiAgICAgIGh0bWwge1xuICAgICAgICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICAgICAgICBiYWNrZ3JvdW5kOiAjMDAwO1xuICAgICAgICBmb250OiAxNnB4IFJhbGV3YXk7XG4gICAgICAgIGNvbG9yOiAjMzMzO1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGhlaWdodDogMTAwJTtcbiAgICAgICAgbWluLWhlaWdodDogMTAwdmg7XG4gICAgICAgIHdpZHRoOiAxMDAlO1xuICAgICAgICBtaW4td2lkdGg6IDEwMHZ3O1xuICAgICAgfVxuXG4gICAgICAqLCAqOmJlZm9yZSwgKjphZnRlciB7XG4gICAgICAgIGJveC1zaXppbmc6IGluaGVyaXQ7XG4gICAgICB9XG5cbiAgICAgIC5wYWdlIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIG1pbi1oZWlnaHQ6IDEwMCU7XG4gICAgICAgIHdpZHRoOiAxMDAlO1xuICAgICAgfVxuXG4gICAgICAke3N0eWxlVGFnfVxuXG4gICAgYH08L3N0eWxlPlxuICA8L2Rpdj5cbilcbiJdfQ== */\n/*@ sourceURL=Components/Head.js */',
       dynamic: [styleTag]
     })
   );
@@ -505,9 +519,8 @@ var defStyles = {
     alignItems: 'center'
   },
   link: {
-    fontSize: '3vmin',
+    fontSize: '2rem',
     marginRight: 15,
-    // fontFamily: 'Federo, avenir, system font',
     fontFamily: 'hasklig, monaco, inconsolata, monospace',
     letterSpacing: '-2px',
     wordWrap: 'nowrap'
@@ -521,22 +534,22 @@ var Nav = function Nav(props) {
     'div',
     { className: 'nav', style: defStyles.nav, __source: {
         fileName: _jsxFileName,
-        lineNumber: 31
+        lineNumber: 30
       }
     },
     routeList.map(function (obj, dex) {
       return _react2.default.createElement(
         _link2.default,
-        { href: obj.path, id: 'embed-' + dex, className: 'nav-link', __source: {
+        { href: obj.path, key: '' + dex, __source: {
             fileName: _jsxFileName,
-            lineNumber: 33
+            lineNumber: 32
           }
         },
         _react2.default.createElement(
           'a',
           { style: defStyles.link, __source: {
               fileName: _jsxFileName,
-              lineNumber: 34
+              lineNumber: 33
             }
           },
           obj.title
@@ -643,6 +656,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 var _jsxFileName = '/Users/charlesmorgan/Developer/projects/pro-portfolio/Layouts/Page.js';
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 var _react = __webpack_require__("react");
 
 var _react2 = _interopRequireDefault(_react);
@@ -659,34 +674,60 @@ __webpack_require__("babel-polyfill");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Page = function Page(_ref) {
-  var children = _ref.children,
-      pageStyles = _ref.pageStyles,
-      pageClassName = _ref.pageClassName;
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-  return _react2.default.createElement(
-    'div',
-    { className: 'page ' + pageClassName, __source: {
-        fileName: _jsxFileName,
-        lineNumber: 9
-      }
-    },
-    _react2.default.createElement(_Head2.default, { styleTag: pageStyles, __source: {
-        fileName: _jsxFileName,
-        lineNumber: 10
-      }
-    }),
-    _react2.default.createElement(
-      _Content2.default,
-      { pageTitle: pageClassName, __source: {
-          fileName: _jsxFileName,
-          lineNumber: 11
-        }
-      },
-      children
-    )
-  );
-};
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Page = function (_Component) {
+  _inherits(Page, _Component);
+
+  function Page(props) {
+    _classCallCheck(this, Page);
+
+    var _this = _possibleConstructorReturn(this, (Page.__proto__ || Object.getPrototypeOf(Page)).call(this, props));
+
+    _this.state = {};
+    return _this;
+  }
+
+  _createClass(Page, [{
+    key: 'render',
+    value: function render() {
+      var _props = this.props,
+          children = _props.children,
+          pageStyles = _props.pageStyles,
+          pageClassName = _props.pageClassName,
+          pageTitle = _props.pageTitle;
+
+      return _react2.default.createElement(
+        'div',
+        { className: 'page ' + pageClassName, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 15
+          }
+        },
+        _react2.default.createElement(_Head2.default, { styleTag: pageStyles, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 16
+          }
+        }),
+        _react2.default.createElement(
+          _Content2.default,
+          { pageTitle: pageTitle, className: 'content', __source: {
+              fileName: _jsxFileName,
+              lineNumber: 17
+            }
+          },
+          children
+        )
+      );
+    }
+  }]);
+
+  return Page;
+}(_react.Component);
 
 exports.default = Page;
 

@@ -1,9 +1,16 @@
-import React from 'react'
+import React, {Component} from 'react'
 
 import Page from '../Layouts/Page'
 
-export default () => (
-  <Page pageClassName='aboutMe' >
-    <p>This is the about page</p>
-  </Page>
-)
+export default class extends Component {
+
+
+
+  render() {
+    return (
+      <Page pageClassName='about-me' pageTitle='whoami???'>
+        <p>This is the about page</p>
+      </Page>
+    )
+  }
+}
