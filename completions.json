@@ -1,9 +1,10 @@
 {
   "components": {
     "BuiltBy": {},
+    "BurgerMenu": {},
     "CodePen": {
       "attributes": [
-        "penID",
+        "id",
         "slug",
         "defaultTabs",
         "customtitle",
@@ -12,7 +13,7 @@
         "user"
       ],
       "props": {
-        "penID": {
+        "id": {
           "type": {
             "name": "number"
           },
@@ -61,19 +62,9 @@
         },
         "height": {
           "type": {
-            "name": "enum",
-            "value": [
-              {
-                "value": "PropTypes.string",
-                "computed": true
-              },
-              {
-                "value": "PropTypes.number",
-                "computed": true
-              }
-            ]
+            "name": "string"
           },
-          "required": true,
+          "required": false,
           "description": "",
           "defaultValue": {
             "value": "'650px'",
@@ -211,19 +202,20 @@
           "defaultValue": {
             "value": "'650'",
             "computed": false
-          }
+          },
+          "required": false
         },
         "user": {
           "defaultValue": {
             "value": "'webdevdaemon'",
             "computed": false
-          }
+          },
+          "required": false
         }
       }
     },
     "ListCodePensWrapper": {},
     "about": {},
-    "contact": {},
     "hire": {},
     "Pages": {},
     "projects": {},

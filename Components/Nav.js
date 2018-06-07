@@ -1,6 +1,7 @@
-import React from 'react'
 import Link from 'next/link'
 import PropTypes from 'prop-types'
+
+import routeList from '../helpers/routeList'
 
 const defStyles = {
   nav: {
@@ -10,29 +11,21 @@ const defStyles = {
     alignItems: 'center',
   },
   link: {
-    fontSize: '2rem',
+    display: 'block',
+    fontSize: '3vh',
     marginRight: 15,
     fontFamily: 'hasklig, monaco, inconsolata, monospace',
-    letterSpacing: '-2px',
+    letterSpacing: '-1px',
     wordWrap: 'nowrap',
   },
 }
 
-const routeList = [
-  { path: '/', title: 'homePage' },
-  { path: '/hire', title: 'hireMe' },
-  { path: '/projects', title: 'viewProjects' },
-  { path: '/about', title: 'aboutMe' },
-  { path: '/contact', title: 'contactMe' },
-]
-
-const Nav = props => (
+const Nav = () => (
   <div className="nav" style={defStyles.nav}>
-    {routeList.map((obj, dex) => (
+    { routeList.map((obj, dex) => (
       <Link href={obj.path} key={`${dex}`}>
-        <a style={defStyles.link}>{obj.title}</a>
-      </Link>
-    ))}
+        <a style={defStyles.link} id={obj.cssID}>{obj.title}</a>
+      </Link>))  }
   </div>
 )
 

@@ -72,18 +72,26 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
-/***/ "/Users/charlesmorgan/Developer/projects/pro-portfolio/node_modules/next/dist/pages/_error.js":
-/***/ (function(module, exports) {
+/***/ "../../../../../usr/local/lib/node_modules/next/dist/pages/_error.js":
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = require("/Users/charlesmorgan/Developer/projects/pro-portfolio/node_modules/next/dist/pages/_error.js");
+module.exports = __webpack_require__("next/error")
+
 
 /***/ }),
 
 /***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__("/Users/charlesmorgan/Developer/projects/pro-portfolio/node_modules/next/dist/pages/_error.js");
+module.exports = __webpack_require__("../../../../../usr/local/lib/node_modules/next/dist/pages/_error.js");
 
+
+/***/ }),
+
+/***/ "next/error":
+/***/ (function(module, exports) {
+
+module.exports = require("next/error");
 
 /***/ })
 

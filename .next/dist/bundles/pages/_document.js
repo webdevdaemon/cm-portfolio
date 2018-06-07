@@ -72,18 +72,26 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
-/***/ "/Users/charlesmorgan/Developer/projects/pro-portfolio/node_modules/next/dist/pages/_document.js":
-/***/ (function(module, exports) {
+/***/ "../../../../../usr/local/lib/node_modules/next/dist/pages/_document.js":
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = require("/Users/charlesmorgan/Developer/projects/pro-portfolio/node_modules/next/dist/pages/_document.js");
+module.exports = __webpack_require__("next/document")
+
 
 /***/ }),
 
 /***/ 1:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__("/Users/charlesmorgan/Developer/projects/pro-portfolio/node_modules/next/dist/pages/_document.js");
+module.exports = __webpack_require__("../../../../../usr/local/lib/node_modules/next/dist/pages/_document.js");
 
+
+/***/ }),
+
+/***/ "next/document":
+/***/ (function(module, exports) {
+
+module.exports = require("next/document");
 
 /***/ })
 

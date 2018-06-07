@@ -4,26 +4,33 @@ import propTypes from 'prop-types'
 const styles = {
   titleWrapper: {
     display: 'flex',
+    alignItems: 'center',
     justifyContent: 'center',
-    alignItems: 'center'
+    margin: '0 auto',
+    padding: '1rem',
+    width: '100%',
+
   },
   title: {
-    fontSize: '4vh',
-    width: '100%',
-    lineHeight: 1.1,
-    textAlign: 'center',
+    fontFamily: 'Exo 2, Helvetica, sans-serif',
+    fontSize: '2.8rem',
     fontWeight: 700,
-    fontFamily: 'Exo 2, Helvetica, sans-serif'
+    lineHeight: 1.1,
+    margin: '0 auto',
+    textAlign: 'center',
+    width: '100%',
   },
   subTitle: {
     display: 'block',
-    fontSize: '2.5vh',
-    width: '100%',
-    lineHeight: 1.1,
-    textAlign: 'center',
-    fontWeight: 200,
     fontFamily: 'Exo, Helvetica, sans-serif',
-    fontStyle: 'italic'
+    fontSize: '1.4rem',
+    fontStyle: 'italic',
+    fontWeight: 200,
+    lineHeight: 1.1,
+    margin: '0 auto',
+    padding: '1rem 0',
+    textAlign: 'center',
+    width: '100%',
   }
 }
 

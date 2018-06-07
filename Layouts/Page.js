@@ -9,6 +9,17 @@ class Page extends Component {
     this.state = {}
   }
 
+  static getInitialProps = async () => {
+    const response = await axios(pensUrl)
+      .then(r => r)
+      .catch(err => console.log(`CODEPENS_ERROR:  ${err}`))
+    const data = response.data.data
+    const pens = [...data]
+    console.log({pens})
+    return {pens}
+    console.log('pens state successful', {pens})
+  }
+
   render() {
     const {children, pageStyles, pageClassName, pageTitle} = this.props
     return (

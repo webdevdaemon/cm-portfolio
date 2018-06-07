@@ -17,11 +17,13 @@ class CodePen extends React.PureComponent {
           data-user={props.user}
           data-embed-version="2"
           data-pen-title={props.customTitle}
-          preview={props.preview}>
+          preview={props.preview}
+        >
           <span>{'See the Pen '}</span>
           <a href={props.link}>{props.customTitle}</a>
           <span>{'by '}</span>
           <a href={`https://codepen.io/${props.user}`}>{'webDevDaemon '}</a>
+
           <span>
             <i>{'(Charles M.) '}</i>
           </span>
